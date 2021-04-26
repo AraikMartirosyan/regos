@@ -1,0 +1,76 @@
+.prices {
+  padding: 120px 0 30px;
+  color: #000;
+  .header {
+    background-color: #173d61;
+}
+
+  span.prim {
+      display: block;
+      margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+    word-wrap: break-word;
+    background-color: rgba($color: #f4f4f4, $alpha: 1);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  td,
+  th {
+    padding: 10px;
+  }
+
+  table tr {
+    text-align: center;
+  }
+
+  table th,
+  table td {
+    padding: 12px;
+    width: 33.333333%;
+  }
+  table th {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    table {
+      border: 0;
+      padding: 10px;
+    }
+    table thead {
+      display: none;
+    }
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #a0a0a0;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      border: 0;
+      width: 100%;
+    }
+    table td:last-child {
+      border-bottom: 0;
+    }
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: block;
+      padding: 0 8px;
+    }
+  }
+}

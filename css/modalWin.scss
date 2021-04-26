@@ -1,0 +1,84 @@
+.alert {
+  visibility: hidden;
+  transition: 0.2s;
+  z-index: 1000;
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 15px;
+  border-radius: 4px;
+  color: #3c763d;
+}
+
+#myModal {
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 80px 10px;
+  border-radius: 4px;
+  background: #f8f8f8;
+  color: #000;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+  form {
+    .form__item {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        font-weight: 300;
+        font-size: 14px;
+      }
+      input {
+        padding: 10px;
+      }
+      input[type="submit"] {
+        margin: 0 auto;
+        padding: 10px 40px;
+      }
+    }
+    .form__item__select {
+      select {
+        padding: 10px 20px;
+      }
+    }
+    .form__item input[type="submit"] {
+      color: #fff;
+      background-color: #009ee5;
+      transition: .1s;
+      border-radius: 4px;
+      &:hover{
+        background-color: darken(#009ee5,5);
+      }
+    }
+  }
+}
+#myModal #myModal__close {
+  position: absolute;
+  top: 1px;
+  right: 11px;
+  cursor: pointer;
+  display: block;
+  font-size: 29px;
+}
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}

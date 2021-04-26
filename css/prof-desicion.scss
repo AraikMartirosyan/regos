@@ -1,0 +1,114 @@
+.prof-desicion {
+    padding: 80px 0 30px;
+    color: $gray;
+    background-color: $bg;
+    text-align: center;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+
+        &::after {
+            content: '';
+            display: block;
+            margin: 10px auto;
+            width: 80px;
+            height: 5px;
+            background-color: $blue;
+            border-radius: 5px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &__cards {
+        padding: 100px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &-item {
+            padding: 50px 20px;
+            border-radius: 15px;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+            margin-bottom: 50px;
+
+            & i {
+                position: absolute;
+                top: -30px;
+                transform: translate(-30px);
+                font-size: 50px;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+/*icons-color*/
+.fa-cloud {
+    color: #5b8bd0;
+}
+.fa-database {
+    color: #ffda59;
+}
+.fa-shield-alt {
+    color: #33701a;
+}
+.fa-cash-register {
+    color: #4e64af;
+}
+.fa-server {
+    color: #626e7a;
+}
+.fa-laptop {
+    color: #aa733d;
+}
+.fa-cog {
+    color: midnightblue;
+}
+.fa-expand-arrows-alt {
+    color: teal;
+}
+
+@media (max-width: 992px) {
+    .prof-desicion {
+        padding: 50px 0 0;
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__cards {
+            padding-top: 60px;
+            &-item {
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

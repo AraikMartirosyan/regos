@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regos - Автоматизация оптовых и розничных продаж</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="intro">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__main">
+            <a href="index.html"
+              ><img src="img/logo.svg" alt="Regos" class="header__logo"
+            /></a>
+            <nav class="header__nav">
+              <ul class="topmenu">
+                <li class="topmenu__link">
+                  <a href="#">Продукты</a>
+                  <ul class="submenu">
+                    <div class="row">
+                      <div class="col-6">
+                        <li>
+                          <img src="img/easytrade.svg" alt="EasyTrade" />
+                          <a href="http://easytrade.uz" target="_blank"
+                            ><strong>EasyTrade</strong><br /><span
+                              >Легкий учет склада и продаж в одной
+                              программе</span
+                            ></a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-6">
+                        <li>
+                          <img
+                            src="img/storman.svg"
+                            alt="REGOS: STORE MANAGEMENT"
+                          />
+                          <a href="pages/store-management.html"
+                            ><strong>REGOS: STORE MANAGEMENT</strong> <br />
+                            <span>Управление складом. финансы. отчеты</span>
+                          </a>
+                        </li>
+                      </div>
+
+                      <div class="col-6">
+                        <li>
+                          <img src="img/pos.svg" alt="REGOS: POS" />
+                          <a href="pages/pos.html"
+                            ><strong>REGOS: POS</strong> <br />
+                            <span
+                              >Регистрация продаж. Контроль кассы. Скидки</span
+                            >
+                          </a>
+                        </li>
+                      </div>
+                      <div class="col-6">
+                        <li>
+                          <img
+                            src="img/cashserver.svg"
+                            alt="REGOS: CASH SERVER"
+                          />
+                          <a href="pages/cash-server.html"
+                            ><strong>REGOS: CASH SERVER</strong> <br />
+                            <span
+                              >Синхронизация данных между кассами и
+                              сервером</span
+                            ></a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-6">
+                        <li>
+                          <img src="img/vcr.svg" alt="REGOS: VCR" />
+                          <a href="pages/vcr.html"
+                            ><strong>REGOS: VCR</strong> <br />
+                            <span
+                              >Виртуальная касса (соотвествует требованиям ПКМ
+                              РУЗ №943)</span
+                            ></a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-6">
+                        <li>
+                          <img src="img/web.svg" alt="REGOS: ONLINE" />
+                          <a href="pages/online.html"
+                            ><strong>REGOS: ONLINE</strong> <br />
+                            <span
+                              >Мониторинг бизнеса с любого устройства. Закупки.
+                              Продажи</span
+                            ></a
+                          >
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li><a href="pages/prices.html">Цены</a></li>
+                <li class="topmenu__link">
+                  <a href="#">Документация</a>
+                  <ul class="submenu">
+                    <div class="row">
+                      <div class="col-6">
+                        <li>
+                          <img
+                            src="img/user.svg"
+                            alt="Документация Пользователям"
+                          />
+                          <a href="https://docs.regos.uz/ru"
+                            ><strong>Пользователям</strong> <br />
+                            <span>Обзор возможностей продуктов REGOS</span></a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-6">
+                        <li>
+                          <img
+                            src="img/developer.svg"
+                            alt="Документация Разработчикам"
+                          />
+                          <a href="https://docs.regos.uz/api/ru/login"
+                            ><strong>Разработчикам</strong> <br />
+                            <span>Возможности взаимодействия c API</span></a
+                          >
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li><a href="pages/contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="header__contact">
+              <a href="tel:+998951778930" class="header__phone"
+                >+998 95 177 89 30</a
+              >
+            </div>
+            <div class="header__contact">
+              <a href="http://REGOS.ONLINE" class="header__login"
+                >Вход в систему</a
+              >
+            </div>
+
+            <div class="burger-menu">
+              <div class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+              </div>
+
+              <nav class="burger-menu__nav">
+                <ul class="accordion-menu">
+                  <li>
+                    <div class="dropdownlink accordion-menu__item">
+                      Продукты
+                    </div>
+                    <ul class="submenuItems">
+                      <li>
+                        <a href="http://easytrade.uz" target="_blank"
+                          >EasyTrade</a
+                        >
+                      </li>
+                      <li>
+                        <a href="pages/store-management.html"
+                          >REGOS: STORE MANAGEMENT</a
+                        >
+                      </li>
+                      <li>
+                        <a href="pages/pos.html">REGOS: POS</a>
+                      </li>
+                      <li>
+                        <a href="pages/cash-server.html">REGOS: CASH SERVER</a>
+                      </li>
+                      <li>
+                        <a href="pages/vcr.html">REGOS: VCR</a>
+                      </li>
+                      <li>
+                        <a href="pages/online.html">REGOS: ONLINE</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="pages/prices.html" class="accordion-menu__item"
+                      >Цены</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdownlink accordion-menu__item"
+                      >Документация</a
+                    >
+                    <ul class="submenuItems">
+                      <li>
+                        <a href="https://docs.regos.uz/ru">Пользователям</a>
+                      </li>
+                      <li>
+                        <a href="https://docs.regos.uz/api/ru/login"
+                          >Разработчикам</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="pages/contacts.html" class="accordion-menu__item"
+                      >Контакты</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="burger-menu__nav-btns">
+                  <a href="http://REGOS.ONLINE" class="log-btn">Войти</a>
+                </div>
+
+                <div class="burger-menu__nav-phone">
+                  <a href="tel:+998933532080"
+                    >г. Самарканд: +998(93)353-20-80</a
+                  >
+                  <a href="tel:+998951778930">г. Ташкент: +998(95)177-89-30</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="intro__head">
+        <h1 class="intro__title">Профессиональное решение</h1>
+        <h2 class="intro__subtitle">
+          Современные технологии для автоматизации магазинов, бутиков, торговых
+          сетей
+        </h2>
+      </div>
+
+      <div class="container">
+        <div class="intro__content">
+          <div class="checklist">
+            <!-- <div class="checklist__title">
+              Получите <strong>максимум от вашего</strong> бизнеса:
+            </div> -->
+            <div class="checklist__item">
+              <img
+                src="img/check.png"
+                alt="Управление товарными запасами и контроль остатков в режиме
+              онлайн"
+              />
+              <p>
+                Управление товарными запасами и контроль остатков в режиме
+                онлайн
+              </p>
+            </div>
+            <div class="checklist__item">
+              <img
+                src="img/check.png"
+                alt="Прием заказов через Telegram-бот и возможность интеграции с
+              сайтом"
+              />
+              <p>
+                Прием заказов через Telegram-бот и возможность интеграции с
+                сайтом
+              </p>
+            </div>
+            <div class="checklist__item">
+              <img
+                src="img/check.png"
+                alt="Автономная кассовая программа с функцией подключения виртуальной
+              кассы"
+              />
+              <p>
+                Автономная кассовая программа с функцией подключения виртуальной
+                кассы
+              </p>
+            </div>
+            <a href="#" class="intro__btn">НАЧАТЬ РАБОТУ</a>
+          </div>
+
+          <div class="intro__mac">
+            <img
+              src="img/clipart.png"
+              alt="Regos Автоматизация оптовых и розничных продаж"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="privilege">
+        <div class="container">
+          <div class="row privilege__list">
+            <div class="col-12 col-md-6 col-lg-4 privilege__item">
+              <i class="fas fa-check-square"></i>
+              <div>Более 7 лет работы с успешными IT проектами</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 privilege__item">
+              <i class="fas fa-shield-alt"></i>
+              <div>Надежность и безопасность в обращении с данными</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 privilege__item">
+              <i class="fas fa-user-friends"></i>
+              <div>2000+ пользователей у наших сервисов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prof-desicion">
+      <div class="container">
+        <div class="prof-desicion__inner">
+          <h2 class="prof-desicion__title">
+            Комплекс программного обеспечения Regos
+          </h2>
+          <h4 class="prof-desicion__subtitle">
+            Многофункциональный и удобный инструмент управления средним и
+            крупным бизнесом. <br />
+            Подойдет для автоматизации продаж торговых центров и сетевых
+            магазинов.
+          </h4>
+          <div class="row prof-desicion__cards">
+            <div class="col-sm-5 prof-desicion__cards-item">
+              <i class="fas fa-cloud"></i>
+              <h3>Software as a Service</h3>
+              <p>
+                Вы <strong>не тратите время</strong> и большие деньги на
+                разработку программы с нуля, а пользуетесь готовым продуктом и
+                <strong>платите в разы меньше</strong> за его аренду
+              </p>
+            </div>
+
+            <div class="col-sm-5 prof-desicion__cards-item">
+              <i class="fas fa-database"></i>
+              <h3>БЕЗЛИМИТНАЯ БАЗА</h3>
+              <p>
+                Вы имеете <strong>возможность</strong> добавлять в систему
+                <strong>неограниченное количество</strong> товаров, торговых
+                точек и пользователей
+              </p>
+            </div>
+
+            <div class="col-sm-5 prof-desicion__cards-item">
+              <i class="fas fa-cash-register"></i>
+              <h3>УДОБНОЕ МЕСТО КАССИРА</h3>
+              <p>
+                Касса поддерживает работу
+                <strong>в автономном режиме</strong> без доступа к Интернету, а
+                при подключении к Сети –
+                <strong>автоматически синхронизируется</strong> с сервером.
+              </p>
+            </div>
+
+            <div class="col-sm-5 prof-desicion__cards-item">
+              <i class="fas fa-server"></i>
+              <h3>работа с большими данными</h3>
+              <p>
+                Программное обеспечение позволяет обрабатывать
+                <strong>большие объемы данных </strong> и
+                <strong> автоматизировать работу</strong>, как маленьких
+                магазинов, так и больших торговых сетей.
+              </p>
+            </div>
+
+            <div class="col-sm-5 prof-desicion__cards-item">
+              <i class="fas fa-cog"></i>
+              <h3>API интерфейс</h3>
+              <p>
+                Система предоставляет полноценный
+                <strong>API интерфейс</strong> для <strong>интеграции</strong> с
+                другими сервисами, приложениями и сайтами
+              </p>
+            </div>
+
+            <div class="col-sm-5 prof-desicion__cards-item">
+              <i class="fas fa-expand-arrows-alt"></i>
+              <h3>Гибкое масштабирование</h3>
+              <p>
+                Система позволяет <strong>легко расширяться</strong> и
+                <strong>добавлять</strong> программные модули для соответствия
+                росту нагрузки
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="row products__item s-m">
+          <div class="col-lg-6 col-12 d-flex justify-content-center">
+            <div class="device">
+              <img src="img/mac.png" alt="" />
+            </div>
+            <div class="product-slider">
+              <img src="img/sm/1.png" alt="REGOS: STORE MANAGEMENT" />
+              <img src="img/sm/2.png" alt="REGOS: STORE MANAGEMENT" />
+              <img src="img/sm/3.png" alt="REGOS: STORE MANAGEMENT" />
+              <img src="img/sm/4.png" alt="REGOS: STORE MANAGEMENT" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 products__content">
+            <h3>REGOS: STORE MANAGEMENT</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              iure recusandae necessitatibus officia eius assumenda, nostrum
+              consequatur nam soluta voluptatum culpa dolorem dolorum corrupti
+              eveniet facilis sit velit quaerat natus a atque? Consectetur fuga
+              aliquam deserunt autem repellat blanditiis.
+            </p>
+            <a href="pages/store-management.html">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+        <div class="row flex-row-reverse products__item pos-device">
+          <div class="col-lg-6 col-12 d-flex justify-content-center">
+            <div class="device">
+              <img src="img/note.png" alt="" />
+            </div>
+            <div class="product-slider">
+              <img src="img/pos/1.png" alt="REGOS: POS" />
+              <img src="img/pos/2.png" alt="REGOS: POS" />
+              <img src="img/pos/3.png" alt="REGOS: POS" />
+              <img src="img/pos/4.png" alt="REGOS: POS" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 products__content">
+            <h3>REGOS: POS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              iure recusandae necessitatibus officia eius assumenda, nostrum
+              consequatur nam soluta voluptatum culpa dolorem dolorum corrupti
+              eveniet facilis sit velit quaerat natus a atque? Consectetur fuga
+              aliquam deserunt autem repellat blanditiis.
+            </p>
+            <a href="pages/pos.html">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+        <div class="row products__item on">
+          <div class="col-lg-6 col-12 d-flex justify-content-center">
+            <div class="device">
+              <img src="img/ipad.png" alt="" />
+            </div>
+            <div class="product-slider">
+              <img src="img/onl/1.png" alt="REGOS: ONLINE" />
+              <img src="img/onl/2.png" alt="REGOS: ONLINE" />
+              <img src="img/onl/3.png" alt="REGOS: ONLINE" />
+              <img src="img/onl/4.png" alt="REGOS: ONLINE" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 products__content">
+            <h3>REGOS: ONLINE</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              iure recusandae necessitatibus officia eius assumenda, nostrum
+              consequatur nam soluta voluptatum culpa dolorem dolorum corrupti
+              eveniet facilis sit velit quaerat natus a atque? Consectetur fuga
+              aliquam deserunt autem repellat blanditiis.
+            </p>
+            <a href="pages/online.html">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+        <div class="row flex-row-reverse products__item sq">
+          <div class="col-lg-6 col-12 d-flex justify-content-center">
+            <div class="device">
+              <img src="img/mac.png" alt="" />
+            </div>
+            <div class="product-slider">
+              <img src="img/vcr/1.png" alt="REGOS: VCR" />
+              <img src="img/vcr/2.png" alt="REGOS: VCR" />
+              <img src="img/vcr/3.png" alt="REGOS: VCR" />
+              <img src="img/vcr/4.png" alt="REGOS: VCR" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 products__content">
+            <h3>REGOS: VCR</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              iure recusandae necessitatibus officia eius assumenda, nostrum
+              consequatur nam soluta voluptatum culpa dolorem dolorum corrupti
+              eveniet facilis sit velit quaerat natus a atque? Consectetur fuga
+              aliquam deserunt autem repellat blanditiis.
+            </p>
+            <a href="pages/vcr.html">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="privileges">
+      <div class="container justify-content-center">
+        <div class="privileges__inner">
+          <h2 class="privileges__title">ЭТО ТО, ЧТО ВЫ ИСКАЛИ!</h2>
+          <h4 class="privileges__subtitle">
+            ПРЕИМУЩЕСТВА АВТОМАТИЗИРОВАННОЙ СИСТЕМЫ REGOS
+          </h4>
+          <div class="privileges-container">
+            <div class="post-1 post">
+              <h4 class="privileges-container__title">СКЛАДСКОЙ УЧЕТ</h4>
+              <ul class="privileges-container__list">
+                <li>Поставщики и покупатели</li>
+                <li>Остатки на складах</li>
+                <li>Управление закупками</li>
+                <li>Списания и занесения</li>
+                <li>Перемещения между складами</li>
+                <li>Первичные документы</li>
+                <li>Инвентаризация</li>
+                <li>Оформление заказов</li>
+              </ul>
+            </div>
+            <div class="post-2 post">
+              <h4 class="privileges-container__title">СТАТИСТИКА УЧЕТ</h4>
+              <ul class="privileges-container__list">
+                <li>Дэшборд с показателями продаж</li>
+                <li>Продажи по времени и дням недели</li>
+                <li>ABC-анализ</li>
+                <li>XYZ-анализ</li>
+                <li>Продажи по товарам и группам</li>
+                <li>Детализация по чекам</li>
+                <li>Валовая прибыль</li>
+                <li>Отчет по НДС</li>
+                <li>Рентабельность продаж</li>
+              </ul>
+            </div>
+            <div class="post-3 post">
+              <h4 class="privileges-container__title">МАРКЕТИНГ</h4>
+              <ul class="privileges-container__list">
+                <li>Управление продажами</li>
+                <li>Скидки и бонусы</li>
+                <li>Промоакции</li>
+                <li>Ценообразование</li>
+                <li>Карты покупателей</li>
+              </ul>
+            </div>
+            <div class="post-4 post">
+              <h4 class="privileges-container__title">УПРАВЛЕНИЕ КАССОЙ</h4>
+              <ul class="privileges-container__list">
+                <li>Автономность</li>
+                <li>Сенсорный ввод</li>
+                <li>X-отчеты и Z-отчеты</li>
+                <li>Печать чеков</li>
+                <li>Сканер штрих-кодов</li>
+                <li>Дисплей покупателя</li>
+              </ul>
+            </div>
+            <div class="post-5 post">
+              <h4 class="privileges-container__title">ФИНАНСЫ</h4>
+              <ul class="privileges-container__list">
+                <li>Розничная торговля</li>
+                <li>Оптовая торговля</li>
+                <li>Расходы предприятия</li>
+                <li>Финансовые отчеты</li>
+                <li>Управление счетами</li>
+                <li>Дебет-кредит</li>
+                <li>История взаиморасчетов</li>
+              </ul>
+            </div>
+            <div class="post-6 post">
+              <h4 class="privileges-container__title">БЕЗОПАСНОСТЬ</h4>
+              <ul class="privileges-container__list">
+                <li>Роли пользователей</li>
+                <li>Конфиденциальность</li>
+                <li>Сохранность данных</li>
+                <li>Резервное копирование</li>
+                <li>Автоматическая синхронизация</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="action">
+      <div class="container">
+        <p class="action__title">Остались вопросы?</p>
+        <div class="row justify-content-between">
+          <div class="col-xl-4 col-md-7 col-sm-12 block-1 mb-2">
+            <h3>Закажите обратный звонок</h3>
+            <p class="mb-2">Перезвоним в ближайшее рабочее время</p>
+            <form class="reCall" action="#" method="POST">
+              <input type="tel" name="tel" value="+998" id="telInp" required />
+              <input type="hidden" name="form_subject" value="Заказ звонка">
+              <input type="hidden" id="token" name="token" />
+              <input type="submit" value="Перезвонить" />
+            </form>
+            <div class="alert" id="alert"></div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-12 block-2 mb-2">
+            <h3>Позвоните нам</h3>
+            <p class="mb-2">Работаем с 10:00 до 19:00</p>
+            <a href="tel:+998951778930">+998 95 177 89 30</a>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 block-3 mb-2">
+            <h3>Skype-презентация Regos</h3>
+            <p class="mb-3">Бесплатно, займет около часа</p>
+            <button class="myLinkModal">
+              Заказать презентацию
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="myModal">
+        <p>Заказать презентацию Regos</p>
+        <span id="myModal__close" class="close">&times;</span>
+        <form action="#" method="POST" id="order-skype">
+          <div class="form__item">
+            <label for="order-name">Ваше имя</label
+            ><input id="order-name" name="orderName" type="text" required />
+          </div>
+          <div class="form__item">
+            <label for="order-email">Эл. почта</label
+            ><input id="order-email" name="orderEmail" type="email" required />
+          </div>
+          <div class="form__item">
+            <label for="skypeName">Имя в Skype</label
+            ><input id="skypeName" name="orderSkype" type="text" required />
+          </div>
+          <div class="form__item form__item__select">
+            <label for="order-select">Выберите время:</label>
+            <select name="select" id="order-select" required>
+              <option selected disabled></option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
+          </div>
+          <input type="hidden" id="token2" name="token" />
+          <input type="hidden" name="form_subject" value="Заказ презентации">
+          <div class="form__item">
+            <input type="submit" value="Заказать" />
+          </div>
+        </form>
+      </div>
+      <div id="myOverlay"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-middle">
+          <div class="row text-center justify-content-between">
+            <div class="mb-3 col-xl-3 col-md-4 col-sm-6">
+              <span class="footer-middle__title">Продукты</span>
+              <a href="http://easytrade.uz" target="_blank">EasyTrade</a>
+              <a href="pages/store-management.html">REGOS: STORE MANAGEMENT</a>
+              <a href="pages/pos.html">REGOS: POS</a>
+              <a href="pages/cash-server.html">REGOS: CASH SERVER</a>
+              <a href="pages/vcr.html">REGOS: VCR</a>
+              <a href="pages/online.html">REGOS: ONLINE</a>
+            </div>
+
+            <div class="mb-3 col-xl-2 col-md-2 col-sm-6">
+              <span class="footer-middle__title">Компания</span>
+              <a href="#">Новости</a>
+              <a href="pages/prices.html">Цены</a>
+              <a href="#">Вакансии</a>
+              <a href="pages/contacts.html">Контакты</a>
+            </div>
+
+            <div class="mb-3 col-xl-2 col-md-2 col-sm-6">
+              <span>Документация</span>
+              <a href="https://easytrade.uz/docs">EasyTrade</a>
+              <a href="https://docs.regos.uz/ru/regos-sm">STORE MANAGEMENT</a>
+              <a href="https://docs.regos.uz/ru/regos-pos">POS</a>
+              <a href="https://docs.regos.uz/ru/regos-cashserver"
+                >CASH SERVER</a
+              >
+              <a href="https://docs.regos.uz/regos-vcr">VCR</a>
+              <a href="https://docs.regos.uz/ru/regos-online">ONLINE</a>
+              <a href="https://docs.regos.uz/api/ru/login"> Разработчикам </a>
+            </div>
+
+            <div class="mb-3 col-xl-2 col-md-3 col-sm-6">
+              <span>г. Ташкент, ул. Абдулла Каххора, 2а</span>
+              <a href="tel:+998951778930">+998 95 177 89 30</a>
+              <span>г. Самарканд</span>
+              <a href="tel:+998933532008">+998 93 353 20 08</a>
+            </div>
+
+            <div class="mb-3 col-xl-3 col-md-4 col-sm-6">
+              <!-- <a href="tel:+998951778930" class="footer-middle__phone mb-2">
+                +998 95 177 89 30
+              </a> -->
+
+              <span class="footer-middle__title mb-2">Клиентский отдел:</span>
+              <a href="tel:998931048930" class="mb-3">+998 93 104 89 30</a>
+              <span class="footer-middle__title">Техническая поддержка:</span>
+              <a href="tel:998909258930" class="mb-2">+998 90 925 89 30</a>
+              <div class="icons">
+                <a href="https://t.me/RegosSoftware"
+                  ><i class="fa fa-telegram"></i
+                ></a>
+                <a href="https://facebook.com/RegosSoftware"
+                  ><i class="fa fa-facebook-square"></i
+                ></a>
+                <a href="https://instagram.com/regossoftware"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row align-items-center text-center">
+            <div class="col">
+              <div class="pb-2">
+                © 2020 OOO "Regos Software". Все права защищены.
+              </div>
+              <small
+                >This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy">Privacy Policy</a>
+                and
+                <a href="https://policies.google.com/terms">Terms of Service</a>
+                apply.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scrollTop">
+      <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfrkusZAAAAAPpTcR-fVuoI4cduTxi6-sCt68OR"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/34cb1cb8c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

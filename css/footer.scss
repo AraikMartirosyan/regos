@@ -1,0 +1,60 @@
+.footer {
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    color: rgb(21, 21, 21);
+    text-align: center;
+    font-size: 14px;
+    
+    &-middle {
+        
+        padding: 20px 0;
+        text-align: left;
+        &__phone {
+
+            color: rgb(255, 80, 80) !important;
+            font-size: 18px !important;
+            margin-top: 0 !important;
+        }
+        a { 
+            color: #777;
+            display: block;
+            margin: 10px 0;
+            transition: .1s;
+            font-size: 14px;
+            
+
+        }
+        span {
+            color: #003504;
+        }
+        a:hover {
+            color: darken($color: #555, $amount: 5);
+        }
+       
+        .icons {
+            
+            display: flex;
+            i {
+                margin-right: 15px;
+                font-size: 30px;
+                transition: .1s;
+            }
+            
+        }
+        a:hover .fa-telegram {
+            color: #0088cc;
+        }
+        a:hover .fa-facebook-square {
+            color: #3b5998;
+        }
+        a:hover .fa-instagram-square {
+            color: #8134AF;
+        }
+    }
+    &-bottom {
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+}
